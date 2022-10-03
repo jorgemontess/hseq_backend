@@ -1,0 +1,8 @@
+Agregar dinasmimo en la pestaña de servicios
+
+    Cuando se marque el servicio, el contenido de la pagina sea el que cambie, y no que se vaya para otra pestaña
+
+
+Quitar inicio de la barra de navegacion
+
+    
