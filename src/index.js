@@ -3,6 +3,9 @@ import express from "express";
 import {dirname, join} from 'path'
 import {fileURLToPath} from 'url'
 
+//Importando rutas desde routes
+import indexRoutes from './routes/index.js'
+
 
 const app = express()
 
@@ -16,11 +19,9 @@ app.set('view engine', 'ejs')
 
 
 //ROUTES
-app.get('/', (req, res) => res.render('index'))
+//llamando y utilizando las rutas importadas
+app.use(indexRoutes)
 
-app.get('/servicios', (req, res) => res.render('servicios'))
-
-app.get('/contactenos', (req, res) => res.render('contactenos'))
 
 app.listen(3000);
 
